@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/scan/scan",
+    "pages/mine/Mine",
+    "pages/Comp/comp",
+    "pages/storage/storage",
+    "pages/pick/pick"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ofo小黄车官方版",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#797979",
+    "selectedColor": "#3fc3f1",
+    "borderStyle": "#000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/qr_code.png",
+        "selectedIconPath": "img/qr_code.png"
+      },
+      {
+        "pagePath": "pages/mine/Mine",
+        "text": "我的",
+        "iconPath": "img/qr_code.png",
+        "selectedIconPath": "img/qr_code.png"
+      },
+      {
+        "pagePath": "pages/Comp/comp",
+        "text": "组件",
+        "iconPath": "img/qr_code.png",
+        "selectedIconPath": "img/qr_code.png"
+      },
+      {
+        "pagePath": "pages/storage/storage",
+        "text": "缓存地址动画",
+        "iconPath": "img/qr_code.png",
+        "selectedIconPath": "img/qr_code.png"
+      },
+      {
+        "pagePath": "pages/pick/pick",
+        "text": "选择器",
+        "iconPath": "img/qr_code.png",
+        "selectedIconPath": "img/qr_code.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,67 @@
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<import src="../../component/component" />
+
+
+
+<view>
+  <!-- 以下是对一个自定义组件的引用 -->
+  <!-- inner-text="Some text" 可以添加该属性自定义显示文本  -->
+  <component-tag-name>
+
+    <!-- 这部分内容将被放置在组件 <slot name="before"> 的位置上 -->
+    <view slot="before">这里是插入到组件slot name="before"中的内容</view>
+    <!-- 这部分内容将被放置在组件 <slot name="after"> 的位置上 -->
+    <view slot="after">这里是插入到组件slot name="after"中的内容</view>
+  </component-tag-name>
+</view>
+<scroll-view scroll-x="true" class='scrollBox' scroll-left="{{scrollLeft}}" scroll-y="false" style=" white-space: nowrap;">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">1111</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">2222</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">3333</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">4444</view>
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4 " bindtap="swichNav">5555</view>
+    <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">6666</view>
+    <view class="swiper-tab-list {{currentTab==6 ? 'on' : ''}}" data-current="5" bindtap="swichNav">7777</view>
+    <view class="swiper-tab-list {{currentTab==7 ? 'on' : ''}}" data-current="5" bindtap="swichNav">8888</view>
+
+  </view>
+</scroll-view>
+
+
+<swiper current="{{currentTab}} " class="swiper-box " duration="300 " style="height:{{winHeight - 31}}px " bindchange="bindChange">
+  <!-- 我是哈哈 -->
+  <swiper-item>
+    <view>我是哈哈1</view>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view>我是呵呵2</view>
+  </swiper-item>
+  <!-- 我是嘿嘿 -->
+  <swiper-item>
+    <view>我是嘿嘿3</view>
+  </swiper-item>
+  <swiper-item>
+    <view>我是恩恩4</view>
+  </swiper-item>
+  <swiper-item>
+    <view>我是额额5</view>
+  </swiper-item>
+  <swiper-item>
+    <view>我是啊啊6</view>
+  </swiper-item>
+  <swiper-item>
+    <view>我是啊啊7</view>
+  </swiper-item>
+  <swiper-item>
+    <view>我是啊啊8</view>
+  </swiper-item>
+</swiper>

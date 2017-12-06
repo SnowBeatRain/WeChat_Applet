@@ -1,0 +1,20 @@
+<!--pages/index/scan/scan.wxml-->
+
+<view class='container_box'>
+  <view class='top_box'>
+    <view class='top_boxOne'>
+      欢迎使用ofo
+    </view>
+    <view class='top_boxTwo'>
+      请规范用车，骑行中不要关闭小程序
+    </view>
+  </view>
+  <view class='bottom_box'>
+    <view class='btn_1'>
+      <button class='btn'>扫码骑车</button>
+    </view>
+    <view  class='btn_2'>
+      <button class='btn'>手动输入车牌号</button>
+    </view>
+  </view>
+</view>

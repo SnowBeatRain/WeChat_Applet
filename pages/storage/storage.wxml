@@ -1,0 +1,4 @@
+<text>1、数据缓存</text>
+
+<text>3、动画</text>
+ <view class='animat' animation="{{animationData}}">11111</view> 

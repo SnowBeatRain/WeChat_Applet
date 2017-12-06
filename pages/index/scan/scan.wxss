@@ -1,0 +1,26 @@
+/* pages/index/scan/scan.wxss */
+.container_box{
+  padding: 2rem 0;
+  text-align: center;
+}
+.top_boxOne{
+  font-size: 22px;
+  margin: 10px 0;
+}
+.top_boxTwo{
+  font-size: 14px;
+  margin: 10px 0;
+  color: gray;
+}
+.btn_1 .btn{
+  background-color: yellow;
+  width: 80%;
+  margin-top: 20px;  
+  cursor: pointer;
+}
+.btn_2 .btn{
+  background-color: #fff;
+  width: 80%;
+  margin-top: 20px;
+  cursor: pointer;  
+}

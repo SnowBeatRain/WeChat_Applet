@@ -1,0 +1,43 @@
+.map_container{ 
+    /* height: 672px;  */
+    width: 100%; 
+} 
+
+.map { 
+    height: 100%; 
+    width: 100%; 
+    position: fixed;
+} 
+.topWarn{
+  position: fixed;
+  top: 1rem;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  left: calc(50% - 45%) 
+}
+.warnMsg{
+  background-color:#555;
+   padding: 10px 0; 
+  font-size: 16px;
+  border-radius: 20px;
+}
+.footer_box{
+  position: absolute;
+  bottom: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  text-align: center;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+}
+.footer_box .image{
+  height: 30px;
+  width: 30px;
+  margin-top: 30rpx;
+  margin-left: calc(50% - 15px);  
+}
+.footer_text{
+  font-size: 18px;
+}

@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    <!-- <block wx:else> -->
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <!-- </block> -->
+  </view>
+</view>
+
+<view>1普通选择器</view>
+<!--mode默认selector range数据源value选择的index bindchange事件监听-->
+<picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected">
+  <text>{{array[index]}}</text>
+</picker>
+
+<view>2时间选择器</view>
+<picker mode="time" value="{{time}}" start="06:00" end="24:00" bindchange="listenerTimePickerSelected">
+  <text>{{time}}</text>
+</picker>
+
+<view>3日期选择器</view>
+<picker mode="date" value="{{date}}" start="2016-09-26" end="2017-10-10" bindchange="listenerDatePickerSelected">
+  <text>{{date}}</text>
+</picker>
+
+<view>
+  <picker bindchange="bindPickerChange0" value="{{brandindex}}" range="{{brands}}">
+    <view class="picker">
+      4品牌：{{brands[brandindex]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{object}}">
+    <view class="picker">
+      配件类别：{{object[index1]}}
+    </view>
+  </picker>
+</view>
+<view class="section__title">省市区选择器</view>
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+  <view class="picker">
+    当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+  </view>
+</picker>
+<view>
+  <view>{{year}}年{{month}}月{{day}}日</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+</view>
